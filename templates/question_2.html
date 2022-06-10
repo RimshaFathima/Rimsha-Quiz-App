@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Of Pizza</title>
+    <style>
+        body{
+         background-color: burlywood;
+         font-family: 'Times New Roman', Times, serif;
+         font-size: medium;
+         color: brown;
+        }
+        button{
+            color: black;
+            border: honeydew;
+            border: radius 2px;;
+            border-style: ridge;
+        }
+    </style>
+</head>
+<body>
+    <h1>HISTORY OF PIZZA QUIZ</h1>
+    <p>score={{session.get('score',0)}}</p> 
+    <h4>What was the name of the first modern pizza?</h4>
+    <form action="q2" method="post">
+        <label for="">Spinach</label>
+        <input type="radio" name="option" id="" value="a">
+
+        <label for="">Texas</label>
+        <input type="radio" name="option" id="" value="b">
+
+        <label for="">Margherita</label>
+        <input type="radio" name="option" id="" value="c">
+
+        <button type="submit">SUBMIT</button>
+    </form>
+    <h3>{{message}}</h3>
+    <a href="/templates/question_3.html"><button>Question 3</button></a>
+    
+</body>
+</html>

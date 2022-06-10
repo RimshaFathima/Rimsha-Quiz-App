@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h2>Registeration Page</h2>
+    <form action="/register" methods="POST">
+      
+        <label for="">Name</label>
+        <input type="text"name='name' id=""><br>
+
+        <label for="">Email</label>
+        <input type="email"name='email' id=""><br>
+
+        <label for="">Password</label>
+        <input type="password"name='password' id=""><br>
+
+        <label for="">Age</label>
+        <input type="number"name='age' id=""><br>
+
+        <button type="submit">submit</button><br><br>
+        <h3>Already Have an acoount? Click Here to <a href="/templates/login.html">Login</a></h3>
+    </form>
+    <p>{{message}}</p>
+</body>
+</html> 

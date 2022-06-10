@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Of Pizza</title>
+</head>
+<body>
+    <h1>HISTORY OF PIZZA QUIZ</h1>
+    <p>Score = {{%session.get()%}}</p>
+    <h4>Frozen pizzas became available in the early ______?</h4>
+    
+    <form action="q2" method="post">
+        <label for="">1990's</label>
+        <input type="radio" name="option" id="" value="a">
+
+        <label for="">1950's</label>
+        <input type="radio" name="option" id="" value="b">
+
+        <label for="">1930's</label>
+        <input type="radio" name="option" id="" value="c">
+
+        <button type="submit">SUBMIT</button>
+    </form>
+    <h3>{{message}}</h3>
+    <a href="/templates/question_6.html"><button>Question 6</button></a>
+    {%endif%}
+</body>
+</html>
+

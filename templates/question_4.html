@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Of Pizza</title>
+    <style>
+        body{
+         background-color: burlywood;
+         font-family: 'Times New Roman', Times, serif;
+         font-size: medium;
+         color: brown;
+        }
+        button{
+            color: black;
+            border: honeydew;
+            border: radius 2px;;
+            border-style: ridge;
+        }
+    </style>
+</head>
+<body>
+    <h1>HISTORY OF PIZZA QUIZ</h1>
+    <p>Score = {{%session.get()%}}</p>
+    <h4>What is basic pizza dough made with?</h4>
+    
+    <form action="q2" method="post">
+        <label for="">water and eggs</label>
+        <input type="radio" name="option" id="" value="a">
+
+        <label for="">milk , flour , yeast</label>
+        <input type="radio" name="option" id="" value="b">
+
+        <label for="">water, flour, salt and yeast</label>
+        <input type="radio" name="option" id="" value="c">
+
+        <button type="submit">SUBMIT</button>
+    </form>
+    <h3>{{message}}</h3>
+    <a href="/templates/question_5.html"><button>Question 5</button></a>
+    {%endif%}
+</body>
+</html>
+
